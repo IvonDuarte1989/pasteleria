@@ -1,0 +1,624 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(249, 216, 156);
+}
+
+/* Fuentes de la página */
+
+@font-face {
+    font-family: "louis_george_caf";
+    src: url("./louis_george_caf/Louis\ George\ Cafe\ Italic.ttf");
+}
+
+@font-face {
+    font-family: "louis_george_caf_Bold";
+    src: url("./louis_george_caf/Louis\ George\ Cafe\ Bold\ Italic.ttf");
+}
+
+@font-face {
+    font-family: "louis_george_caf_Light";
+    src: url("./louis_george_caf/Louis\ George\ Cafe\ Light.ttf");
+}
+
+/*  Contenedor general de la página */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Títulos de secciones */
+.section-text h2{
+    display:none;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: rgb(188, 101, 141);
+    text-align: center;
+    font-family: "louis_george_caf";
+    letter-spacing: 1px;
+}
+
+/* Títulos de última sección */
+
+h3 {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(188, 101, 141);
+    font-family: "louis_george_caf";
+    letter-spacing: 1px;
+}
+
+
+/* Contenedor del menú */
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  Barra de menú  */
+
+nav {
+    width: 100%;
+}
+
+/*  Contenedor del logo  */
+
+.logo-container {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+/*  Tamaño de la imagen/ logo  */
+
+.logo-container img {
+    width: 50%;
+    height: 50%;
+    margin-left: 50%;
+}
+
+/*  Color de fondo del menú*/
+
+header {
+    background-color: white;
+}
+
+/*  Lista del menú */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20 50%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li {
+    margin: 4px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(188, 101, 141);
+    font-size: 1.5rem;
+    font-family: "louis_george_caf_Bold";
+}
+
+a:hover {
+    color: rgb(245, 167, 167);
+}
+
+/* 
+#texto-nav{
+    padding:  200px;
+} */
+
+
+.carrousel {
+    /* margin-top: 90px;
+    margin-bottom: 90px;
+    height: 95vh; */
+    display: none;
+}
+
+/*  Contenedor de las imagenes del carrusel  */
+
+.pic-ctn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 4vh;
+}
+
+.pic-ctn>img {
+    animation: none;
+}
+
+/*  Clase que se aplica a todas las secciones  */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/*  Párrafos de cada sección  */
+
+.section p {
+    padding: 0 10%;
+    text-align: center;
+    font-family: "louis_george_caf_Light";
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.section-image {
+    padding: 0 20%;
+}
+
+/*  Imagenes de cada sección  */
+
+.section-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*  Input de cada sección del formulario  */
+
+input {
+    display: block;
+    font-family: "louis_george_caf";
+    font-size: .8rem;
+    width: 80vw;
+    height: 4vh;
+    padding: 0px 15px 0px 15px;
+    margin: 5px auto;
+    background: transparent;
+    outline: none;
+    color: rgb(188, 101, 141);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: solid 1px rgb(188, 101, 141);
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+.section-form {
+    height: 36vh;
+}
+
+/*  Colores del formulario  */
+
+input:hover {
+    background: rgb(255, 232, 236);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(188, 101, 141);
+}
+
+#submit {
+    background-color: rgb(188, 101, 141);
+    color: white;
+    width: 20vw;
+    font-size: 1rem;
+}
+
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#cpButton {
+    color: rgb(188, 101, 141);
+}
+
+#cpButton:hover {
+    cursor: pointer;
+}
+
+#zone {
+    font-size: 1rem;
+}
+
+textarea {
+    display: block;
+    margin: 5px auto;
+    width: 80vw;
+    max-width: 80vw;
+    height: 8vh;
+    max-height: 8vh;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: rgb(188, 101, 141);
+    font-family: "louis_george_caf";
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border: solid 1px rgb(188, 101, 141);
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: rgb(255, 232, 236);
+}
+
+.section-options {
+    background-color: rgb(240, 238, 238);
+    height: 20vh;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.section-options ul {
+    margin: 0;
+}
+
+.section-options a {
+    font-size: 1.3rem;
+}
+
+.section-options-image {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.section-options-image img {
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+
+.media-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*  Píe de página  */
+
+footer {
+    display: flex;
+    text-align: center;
+    background-color: rgb(130, 196, 195);
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-family: "louis_george_caf";
+}
+
+.fa-envelope {
+    color: rgb(188, 101, 141);
+}
+
+/*  Botón flotante  */
+
+.btn-whatsapp {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 999;
+}
+
+.btn-whatsapp a img {
+    width: 80%;
+    height: 80%;
+}
+
+/*  Cortes de pantalla */
+
+@media screen and (max-width: 375px) {
+    .btn-whatsapp a img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+/*Intermedio*/
+@media screen and (min-width: 768px) {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+
+        font-size: 1.7rem;
+    }
+
+    a {
+
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+    .section-options a {
+        font-size: 1.5rem;
+    }
+
+    .section-form {
+        height: 40vh;
+    }
+
+    #submit {
+        width: 20vw;
+        height: 6vh;
+        font-size: 1.3rem;
+    }
+}
+
+/*Escritorio*/
+@media screen and (min-width: 1024px) {
+    /* .logo-container {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    } */
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    nav {
+        display: flex;
+        align-content: center;
+        box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin: auto 2px auto auto;
+    }
+
+    ul li {
+        margin: auto 10px;
+        padding: 20px;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    .logo-container {
+        width: 30%;
+        height: 30%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .titulo-arriba{
+        display: none;
+    }
+
+    .section-text h2{
+        display: block;
+    }
+
+    
+    .section-form {
+        height: 46vh;
+    }
+
+
+
+    /*  Contenedor del carrusel */
+
+    /* .carrousel {
+        margin-top: 90px;
+        margin-bottom: 0px;
+        height: 5vh;
+        display: none;
+    } */
+
+    .section {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .section-text {
+        width: 50%;
+    }
+
+    .section-text h2 {
+        margin-top: 120px;
+    }
+
+    .section-image {
+        padding: 20px;
+        max-width: 60%;
+        max-height: 40%;
+    }
+
+    #imgDulce {
+        content: url("./img/torta.jpg");
+    }
+
+    #imgSalado {
+        content: url("./img/pan.jpg");
+    }
+
+    #imgBoxes {
+        content: url("./img/caja.jpg");
+    }
+
+    .fa-envelope {
+        color: rgb(188, 101, 141);
+    }
+
+    .section-options {
+        justify-content: space-around;
+        height: 25vh;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+
+    }
+
+    .section-options ul {
+        flex-direction: column;
+
+    }
+
+    .section-options ul li {
+        padding: 5px;
+    }
+
+    .carrousel {
+        margin-top: 100px;
+        margin-bottom: 0px;
+        height: 75vh;
+        display: block;
+    }
+
+
+    @keyframes display {
+        0% {
+            transform: translateX(90px);
+            opacity: 0;
+        }
+
+        10% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        20% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        30% {
+            transform: translateX(-90px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(-90px);
+            opacity: 0;
+        }
+    }
+
+    .pic-ctn>img {
+        /* width: 80%;
+        height: 70%; */
+        width: 80vw;
+        height: 70vh;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        right: 1%;
+        opacity: 0;
+        animation: display 10s infinite;
+    }
+
+    img:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    img:nth-child(3) {
+        animation-delay: 4s;
+    }
+
+    img:nth-child(4) {
+        animation-delay: 6s;
+    }
+
+    img:nth-child(5) {
+        animation-delay: 8s;
+    }
+
+    input {
+        width: 50vw;
+        height: 6vh;
+    }
+
+    textarea {
+        width: 50vw;
+    }
+
+    #submit {
+        width: 16vw;
+        height: 6vh;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+
+    .pic-ctn>img {
+        left: 4%;
+        width: 100%;
+        height: 90%;
+    }
+
+    input {
+        height: 7vh;
+    }
+
+    .section-options a {
+        font-size: 1.8rem;
+    }
+}

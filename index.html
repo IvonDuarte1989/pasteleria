@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="validacion.js">
+    <title>Ojo Dulce Pastelería </title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="./img/Pastelería Dulce Rosa.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a id="texto-nav" href="#Nuestros-Productos">Nuestros Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 1 Sección / Carrusel  -->
+
+    <div class="container">
+        <section class="carrousel">
+            <div class="pic-ctn">
+                <img src="./img/carrusel_1.jpg" alt="">
+                <img src="./img/carrusel_2.jpg" alt="">
+                <img src="./img/carrusel_3.jpg" alt="">
+                <img src="./img/carrusel_4.jpg" alt="">
+                <img src="./img/carrusel_5.jpg" alt="">
+            </div>
+        </section>
+        <!--  2 Sección / Dulces  -->
+        <div id="Nuestros-Productos">
+            <section class="section">
+
+                <div class="section-image">
+                    <h2 class="titulo-arriba">Dulces</h2>
+                    <img src="./img/dulce.jpg" alt="" id="imgDulce">
+                </div>
+                <div class="section-text">
+                    <h2>Dulces</h2>
+                    <p>Variedad de tortas, tartas, budines y más. ¿Todavía no
+                        las probaste?
+                        <br>Hacenos tu consulta por pedidos, precios y envíos.
+                    </p>
+                </div>
+            </section>
+            <!--  Sección 3 / Salados  -->
+
+            <section class="section">
+
+                <div class="section-image">
+                    <h2 class="titulo-arriba">Salados</h2>
+                    <img src="./img/salado.jpg" alt="" id="imgSalado">
+                </div>
+                <div class="section-text">
+                    <h2>Salados</h2>
+                    <p>Mini tortas de miga, chipa, roquejores, sanguches de
+                        scones de queso y más
+                        <br>El mejor regalo para los amantes de lo salado<br>Hacenos
+                        tu consulta por pedidos,
+                        precios y envíos.
+                    </p>
+                </div>
+            </section>
+            <!--  Sección 4 / Boxes -->
+
+            <section class="section section-boxes">
+
+                <div class="section-image">
+                    <h2 class="titulo-arriba">Boxes</h2>
+                    <img src="./img/boxes.jpg" alt="" id="imgBoxes">
+                </div>
+                <div class="section-text">
+                    <h2>Boxes</h2>
+                    <p>Tenemos variedad de opciones para regalar y quedar
+                        genial. Reserva tu box.
+                        <br>Hacenos tu consulta por pedidos, precios y envíos.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!--  Título e ícono del formulario  -->
+
+        <section class="section section-form" id="contacto">
+            <div>
+                <div class="form-title">
+
+                    <h2><i class="fa-regular fa-envelope fa-bounce fa-1x" style=" --fa-bounce-start-scale-x: 1;
+                                --fa-bounce-start-scale-y: 1;
+                                --fa-bounce-jump-scale-x:
+                                1; --fa-bounce-jump-scale-y: 1;
+                                --fa-bounce-land-scale-x: 1;
+                                --fa-bounce-land-scale-y:
+                                1; --fa-bounce-rebound: 0;"></i> Contacto</h2>
+                </div>
+                <!--  Link a fuente del ícono (sobre animado) -->
+
+                <form action="https://formspree.io/f/mpznpkoz" method="post" id="formularioContacto">
+                    <!--  Sección 5 / Formulario  -->
+
+                    <input type="text" name="nombre" id="name" placeholder="Nombre">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="number" name="telefono" id="phone" placeholder="Teléfono">
+                    <textarea name="mensaje" id="message" placeholder="Mensaje"></textarea>
+                    <input id="submit" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="section section-options">
+        <div>
+            <h3>Explorá nuestros productos</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Nuestros-Productos">Nuestros Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Nuestras redes sociales</h3>
+            <div class="media-options">
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón flotante -->
+
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/" target="_blank">
+            <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+        </a>
+    </div>
+
+    <!--  Píe de página  -->
+
+    <footer>
+        <p><strong>&copy; Ojo Dulce 2023</strong></p>
+    </footer>
+    <script src="validacion.js"></script>
+    <script src="https://kit.fontawesome.com/184ef29582.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
