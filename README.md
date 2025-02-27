@@ -1,6 +1,6 @@
 # Codo a Codo 4.0 - Fullstack - Python (2022)
 ## Contenidos del módulo frontend
-* HTML: Mauqetado básico de páginas web
+* HTML: Maquetado básico de páginas web
 * CSS: Estilos y presentación visual de los sitios web
 * Bootstrap: Utilización del framework para diseño responsivo
 * JavaScript: Programación del comportamiento dinámico en las páginas web
