@@ -16,3 +16,6 @@
 ## Objetivos del curso
 Realizar una página web responsive, con un formulario interactivo utilizando Javascript para su funcionamiento.
 [Link al proyecto](https://ojodulce.netlify.app/)
+
+## Certificado
+[Link al certificado](https://drive.google.com/file/d/11m202cAOIPd35Zs8duXtLHkKCU6Czb3g/view?usp=drive_link)
